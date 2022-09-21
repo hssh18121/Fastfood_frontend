@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__logo-box">
+        <img src="" alt="Logo" class="header__logo" />
+      </div>
+
+      <div class="header__text-box">
+        <h1 class="heading-primary">
+          <span class="heading-primary--main">Outdoors</span>
+          <span class="heading-primary--sub">is where life happens</span>
+        </h1>
+
+        <a href="#section-tours" class="btn btn--white btn--animated"
+          >Discover our tours</a
+        >
+      </div>
+    </header>
+  </body>
+  <style>
+    .header {
+      -webkit-clip-path: polygon(0 0, 100% 0, 100% 35vh, 0 100%);
+      clip-path: polygon(0 0, 100% 0, 100% 35vh, 0 100%);
+      height: 55vh;
+      background-image: linear-gradient(
+          to right bottom,
+          rgba(255, 244, 230, 0.8),
+          rgba(255, 192, 120, 0.8)
+        ),
+        url("img/meals/meal-7.jpg");
+      background-size: cover;
+      background-position: top;
+    }
+  </style>
+</html>
