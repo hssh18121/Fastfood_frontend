@@ -54,119 +54,50 @@
     <title>Omnifood</title>
   </head>
   <body>
-    <header class="header margin-bottom-md">
-      <a href="#" class="main-nav-link" style="font-size: 3rem"> Fastfood </a>
-
-      <nav class="main-nav">
-        <ul class="main-nav-list">
-          <li><a class="main-nav-link" href="#how">Manage account</a></li>
-          <li><a class="main-nav-link" href="#meals">Meals</a></li>
-          <li>
-            <a class="main-nav-link" href="#testimonials">Login</a>
-          </li>
-          <li><a class="main-nav-link" href="#pricing">Register</a></li>
-          <li><a class="main-nav-link nav-cta" href="#cta">Your Cart</a></li>
-        </ul>
-      </nav>
-
-      <button class="btn-mobile-nav">
-        <ion-icon class="icon-mobile-nav" name="menu-outline"></ion-icon>
-        <ion-icon class="icon-mobile-nav" name="close-outline"></ion-icon>
-      </button>
-    </header>
     <main>
-      <div class="container component-arrangement">
-        <div class="img-container">
-          <div class="item">
-            <img
-              src="img/meals/meal-1.jpg"
-              class="meal-img"
-              id="meal-img"
-              alt="Japanese Gyozas"
-            />
+      <div class="content-container">
+        <div class="container component-arrangement box-content">
+          <div class="img-container">
+            <div class="item">
+              <img
+                src="img/meals/cart-info-img.png"
+                class="meal-img"
+                id="meal-img"
+                alt="Japanese Gyozas"
+              />
+            </div>
+          </div>
+          <div class="display-info">
+            <p class="meal-name">Name: Type something here</p>
+            <p class="meal-price">Price: 300$</p>
+            <ul class="meal-info-list">
+              <li></li>
+              <li class="meal-info">
+                <span class="meal-attribute-info">Description: </span>
+                We are a technology company first, but with a major focus on
+                consumer well-being through a healthy diet.
+              </li>
+              <li class="meal-info">
+                <span class="meal-attribute-info">Category: </span>
+                Dessert
+              </li>
+              <li class="meal-info">
+                <span class="meal-attribute-info">Price: </span>
+                30000VND
+              </li>
+            </ul>
+            <div class="two-buttons-container">
+              <a href="#" class="btn btn--small" id="btn--red"
+                >Add to favourite</a
+              >
+              <a href="#" class="btn btn--small">Add to cart</a>
+            </div>
           </div>
         </div>
-        <div class="display-info">
-          <p class="meal-name">Name: Type something here</p>
-          <p class="meal-price">Price: 300$</p>
-          <ul class="meal-info-list">
-            <li></li>
-            <li class="meal-info">
-              <span class="meal-attribute-info">Description: </span>
-              We are a technology company first, but with a major focus on
-              consumer well-being through a healthy diet.
-            </li>
-            <li class="meal-info">
-              <span class="meal-attribute-info">Category: </span>
-              Dessert
-            </li>
-            <li class="meal-info">
-              <span class="meal-attribute-info">Rating: </span>
-              4.9
-            </li>
-          </ul>
-
-          <a href="#" class="btn btn--small">Add to cart</a>
-        </div>
+        <a href="#" class="cart--info--backlink">
+          &larr; Back to all products</a
+        >
       </div>
-      <div class="container">
-        <div class="post">
-          <div class="text">Thanks for rating us!</div>
-          <div class="edit">EDIT</div>
-        </div>
-        <div style="width: 100%">
-          <div
-            style="margin-top: 4rem; margin-bottom: -4.7rem; font-size: 3rem"
-          >
-            Have you tried this dish? Leave your rating now:
-          </div>
-          <div class="star-widget">
-            <input type="radio" name="rate" id="rate-1" />
-            <label for="rate-1" class="fas fa-star"></label>
-            <input type="radio" name="rate" id="rate-2" />
-            <label for="rate-2" class="fas fa-star"></label>
-            <input type="radio" name="rate" id="rate-3" />
-            <label for="rate-3" class="fas fa-star"></label>
-            <input type="radio" name="rate" id="rate-4" />
-            <label for="rate-4" class="fas fa-star"></label>
-            <input type="radio" name="rate" id="rate-5" />
-            <label
-              style="margin-bottom: 1rem"
-              for="rate-5"
-              class="fas fa-star"
-            ></label>
-
-            <form action="#">
-              <div class="textarea">
-                <textarea
-                  cols="30"
-                  placeholder="Describe your experience.."
-                ></textarea>
-              </div>
-              <div>
-                <button class="submit--btn btn--small" type="submit">
-                  Send
-                </button>
-              </div>
-            </form>
-          </div>
-        </div>
-      </div>
-      <script>
-        const btn = document.querySelector("button");
-        const post = document.querySelector(".post");
-        const widget = document.querySelector(".star-widget");
-        const editBtn = document.querySelector(".edit");
-        btn.onclick = () => {
-          widget.style.display = "none";
-          post.style.display = "block";
-          editBtn.onclick = () => {
-            widget.style.display = "block";
-            post.style.display = "none";
-          };
-          return false;
-        };
-      </script>
     </main>
   </body>
 </html>

@@ -7,6 +7,29 @@ img {
   border-radius: 9px;
 }
 
+.content-container {
+  position: relative;
+  height: 100vh;
+  background-image: linear-gradient(
+      rgba(34, 34, 34, 0.603),
+      rgba(34, 34, 34, 0.603)
+    ),
+    url("../img/meals/meal-9.jpg");
+  background-size: cover;
+}
+
+.box-content {
+  background: rgb(256, 256, 256, 0.9);
+  position: absolute;
+  box-shadow: 0 20px 30px 0 rgba(0, 0, 0, 0.07);
+  border-radius: 12px;
+  top: 45%;
+  right: 50%;
+  border: 1px solid #ccc;
+  padding: 20px;
+  transform: translate(50%, -40%);
+  height: 450px;
+}
 .component-arrangement {
   display: grid;
   grid-template-columns: 1fr 1.5fr;
@@ -54,7 +77,7 @@ img {
 .btn:link,
 .btn:visited {
   margin-top: 1rem;
-  width: 20rem;
+  width: 30rem;
   background-color: #e67e22;
   color: #fff;
   text-decoration: none;
@@ -66,6 +89,10 @@ img {
   font-size: 1.7rem;
   padding: 15px 12px;
 }
+.two-buttons-container {
+  display: flex;
+  justify-content: space-between;
+}
 .btn {
   background-color: #cf711f;
   color: #fff;
@@ -75,75 +102,20 @@ img {
   background-color: #cf711f;
   color: #fff;
 }
+#btn--red {
+  background-color: #f03e3e;
+  color: #fff;
+}
+
+#btn--red:hover,
+#btn--red:active {
+  background-color: #c92a2a;
+  color: #fff;
+}
 
 ol,
 ul {
   padding: 0;
-}
-
-@import url("https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap");
-
-.container .post {
-  display: none;
-}
-.container .text {
-  font-size: 25px;
-  color: #666;
-  font-weight: 500;
-}
-.container .edit {
-  position: absolute;
-  right: 10px;
-  top: 5px;
-  font-size: 16px;
-  color: #666;
-  font-weight: 500;
-  cursor: pointer;
-}
-.container .edit:hover {
-  text-decoration: underline;
-}
-.container .star-widget input {
-  display: none;
-}
-.star-widget label {
-  font-size: 40px;
-  color: #444;
-  padding: 10px;
-  float: right;
-  transition: all 0.2s ease;
-}
-input:not(:checked) ~ label:hover,
-input:not(:checked) ~ label:hover ~ label {
-  color: #fd4;
-}
-input:checked ~ label {
-  color: #fd4;
-}
-input#rate-1:checked ~ label {
-  color: #fe7;
-}
-#rate-1:checked ~ .rating-description:before {
-  content: "I just hate it ";
-}
-#rate-2:checked ~ .rating-description:before {
-  content: "I don't like it ";
-}
-#rate-3:checked ~ .rating-description:before {
-  content: "It is awesome ";
-}
-#rate-4:checked ~ .rating-description:before {
-  content: "I just like it ";
-}
-#rate-5:checked ~ .rating-description:before {
-  content: "I just love it ";
-}
-.container form {
-  display: none;
-}
-
-input:checked ~ form {
-  display: block;
 }
 
 .rating-description {
@@ -189,4 +161,21 @@ form .textarea textarea {
   font-size: 1.7rem;
   padding: 15px 12px;
   border: none;
+}
+
+.cart--info--backlink:link,
+.cart--info--backlink:visited {
+  margin-left: 150px;
+  display: inline-block;
+  padding-top: 70px;
+  color: #fff;
+  text-decoration: none;
+  font-size: 2.5rem;
+}
+
+.cart--info--backlink:hover,
+.cart--info--backlink:active {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  text-decoration-thickness: 2px;
 }

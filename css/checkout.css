@@ -1,0 +1,128 @@
+/*
+    SPACING SYSTEM (px)
+    2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+    FONT SIZE SYSTEM (px)
+    10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+    */
+/*
+    GREY COLOR: #343a40
+    */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+main {
+  display: flex;
+  justify-content: space-evenly;
+  position: relative;
+  height: 100vh;
+  background-image: linear-gradient(
+      rgba(34, 34, 34, 0.603),
+      rgba(34, 34, 34, 0.603)
+    ),
+    url("../img/meals/meal-9.jpg");
+  background-size: cover;
+}
+table {
+  width: 900px;
+  margin-top: 20px;
+  font-size: 18px;
+  /* border: 1px solid #343a40; */
+  border-collapse: collapse;
+  border-radius: 9px;
+  overflow: hidden;
+  margin-bottom: 50px;
+}
+
+th,
+td {
+  /* border: 1px solid #343a40; */
+  padding: 24px 16px;
+  text-align: left;
+}
+
+thead tr {
+  background-color: #343a40;
+  color: #fff;
+}
+
+thead th {
+  width: 25%;
+}
+
+tbody tr:nth-child(odd) {
+  background-color: #f8f9fa;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #e9ecef;
+}
+
+.checkout--info--container {
+  padding: 20px;
+  height: 270px;
+  background: rgb(256, 256, 256, 0.8);
+  margin-top: 90px;
+  box-shadow: 0px 3px 6px 0px rgb(0 0 0 / 10%), 0px 1px 3px 0px rgb(0 0 0 / 8%);
+}
+.cart--info--backlink:link,
+.cart--info--backlink:visited {
+  display: inline-block;
+  padding-top: 30px;
+  color: #fff;
+  text-decoration: none;
+  font-size: 2.5rem;
+}
+
+.cart--info--backlink:hover,
+.cart--info--backlink:active {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  text-decoration-thickness: 2px;
+}
+.orange-button {
+  margin-top: 20px;
+  margin-bottom: 15px;
+  width: 100%;
+  font-weight: 600;
+  background-color: #fd7e14;
+  color: #fff;
+  text-decoration: none;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding: 15px;
+  cursor: pointer;
+  font-size: 15px;
+  border-radius: 5px;
+  border: none;
+  text-transform: uppercase;
+}
+.orange-button:hover {
+  background-color: #f76707;
+}
+.green-button {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-size: 15px;
+  margin-bottom: 15px;
+  width: 100%;
+  font-weight: 600;
+  background-color: #2f9e44;
+  color: #fff;
+  text-decoration: none;
+  padding: 15px;
+  cursor: pointer;
+  border-radius: 5px;
+  border: none;
+  text-transform: uppercase;
+}
+.green-button:hover {
+  background-color: #2b8a3e;
+}
+.total--price--field {
+  font-size: 4rem;
+  font-weight: 600;
+}
